@@ -5,6 +5,24 @@ import hashlib
 import os
 import json
 
+def load_leaderboard():
+    if os.path.exists("leaderboard.json"):
+        with open("leaderboard.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+def save_leaderboard(new_record):
+    data = load_leaderboard()
+    data.append(new_record)
+
+    # сортировка по очкам (по убыванию)
+    data = sorted(data, key=lambda x: x["score"], reverse=True)[:3]
+
+    with open("leaderboard.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+    return data
+
 # ----------------------------
 # 🟢 КОНСТАНТЫ
 # ----------------------------
