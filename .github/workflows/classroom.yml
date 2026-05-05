@@ -81,4 +81,4 @@ jobs:
           COMPOSE_EXISTS: "true"
           ANALYSIS_EXISTS: "true"
         with:
-          runners: lab12-checks
+          runners: "run-autograding-tests"
