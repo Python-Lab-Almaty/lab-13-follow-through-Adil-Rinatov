@@ -69,40 +69,6 @@
         false
       ],
       "max_points": 30
-    },
-    "level_3": {
-      "tasks": [
-        {
-          "id": "3.5",
-          "title": "Топ-3 рекордов",
-          "description": "Сохраняй и отображай лучшие 3 результата",
-          "hint": "Читай/пиши файл leaderboard.json",
-          "code_pattern": "leaderboard|top.*3",
-          "points": 15
-        },
-        {
-          "id": "3.3",
-          "title": "Таймер на экране",
-          "description": "Отображай прошедшее время в реальном времени",
-          "hint": "Создай новый turtle.Turtle() для времени",
-          "code_pattern": "time.time\\(\\)|timer",
-          "points": 15
-        },
-        {
-          "id": "3.2",
-          "title": "Движение по дуге",
-          "description": "Поворот должен быть плавным (по дуге), а не мгновенным",
-          "hint": "Используй hero.setheading() и постепенное изменение угла",
-          "code_pattern": "setheading|circle\\(",
-          "points": 15
-        }
-      ],
-      "completed": [
-        false,
-        false,
-        false
-      ],
-      "max_points": 45
     }
   }
 }
